@@ -1,7 +1,6 @@
 import React from 'react'
 import './About.css'
-import WeightLoss from './WeightLoss'
-import Weightgain from './Weightgain';
+
 function About() {
   return (
     <>
@@ -42,12 +41,7 @@ function About() {
         </div>
       </section>
     </div>
-    <div className='weightloss'>
-    <WeightLoss/>
-    </div>
-    <div className='weightgain'>
-      <Weightgain/>
-    </div>
+   
    
    </>
   );

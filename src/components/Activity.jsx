@@ -3,21 +3,21 @@ import { useSelector } from 'react-redux';
 import activityService from '../services/activity'; // Adjust the path as needed
 import './Activity.css';
 import BmiCalculator from './BmiCalculator';
-import DietPlan from './DietPlan'; // Ensure you have a DietPlan component
+
 
 function Activity() {
-  const [selectedDay, setSelectedDay] = useState('');
-  const [inputDay, setInputDay] = useState('');
+  // const [selectedDay, setSelectedDay] = useState('');
+  // const [inputDay, setInputDay] = useState('');
   const [activities, setActivities] = useState([]);
   const user = useSelector(state => state.user);
 
-  const handleDayClick = () => {
-    setSelectedDay(`day${inputDay}`);
-  };
+  // const handleDayClick = () => {
+  //   setSelectedDay(`day${inputDay}`);
+  // };
 
-  const handleInputChange = (event) => {
-    setInputDay(event.target.value);
-  };
+  // const handleInputChange = (event) => {
+  //   setInputDay(event.target.value);
+  // };
 
   useEffect(() => {
     if (user && user.token) {
@@ -48,8 +48,8 @@ function Activity() {
         </ul>
       )}
 
-      <div className="divide10">
-        <div className="container10">
+      {/* <div className="divide10"> */}
+        {/* <div className="container10">
           <h2>Day-To-Life</h2>
           <div>
             <h1>Fat Loss Diet Plan</h1>
@@ -62,13 +62,13 @@ function Activity() {
             <button onClick={handleDayClick}>Show Diet Plan</button>
           </div>
           <div>{selectedDay && <DietPlan day={selectedDay} />}</div>
-        </div>
-
-        <div className="container10">
+        </div> */}
+{/* 
+        <div className="container10"> */}
           <BmiCalculator />
-        </div>
+        {/* </div> */}
       </div>
-    </div>
+    // </div>
   );
 }
 

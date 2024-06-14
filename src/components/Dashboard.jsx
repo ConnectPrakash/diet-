@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import userServices from '../services/users';
 import './Dashboard.css';
+import WeightLoss from './WeightLoss';
+import Weightgain from './Weightgain';
 
 function Dashboard() {
     const user = useSelector(state => state.user);
@@ -75,6 +77,12 @@ function Dashboard() {
                     <img src="../src/components/fit-woman-showing-balanced-diet-7358593-6019527.png" alt="Diet Plan" />
                 </div>
             </div>
+            <div className='weightloss'>
+    <WeightLoss/>
+    </div>
+    <div className='weightgain'>
+      <Weightgain/>
+    </div>
         </div>
     );
 }
