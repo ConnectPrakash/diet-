@@ -1,0 +1,60 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.dashboard-container h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.dashboard-container p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #666;
+}
+
+.dashboard-container a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dashboard-container a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.notes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.notes p {
+    flex: 1;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.notes img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

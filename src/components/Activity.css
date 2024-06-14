@@ -1,0 +1,85 @@
+/* Activity.css */
+
+.activity-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.activity-container h3 {
+    margin-bottom: 20px;
+}
+
+.activity-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.activity-container li {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+
+.activity-container li:last-child {
+    border-bottom: none;
+}
+
+.activity-container h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.activity-container p {
+    margin: 5px 0;
+}
+
+.activity-container span {
+    display: block;
+    color: #999;
+    font-size: 14px;
+}
+
+.divide10 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.container10 {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    width: 45%;
+}
+
+.container10 h2, .container10 h1 {
+    margin-bottom: 20px;
+}
+
+.container10 input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.container10 button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container10 button:hover {
+    background-color: #0056b3;
+}
