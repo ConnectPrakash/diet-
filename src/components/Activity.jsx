@@ -3,13 +3,47 @@ import { useSelector } from 'react-redux';
 import activityService from '../services/activity'; // Adjust the path as needed
 import './Activity.css';
 import BmiCalculator from './BmiCalculator';
-
+import { useDispatch } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom';
+import userServices from '../services/users';
 
 function Activity() {
+  const user = useSelector(state => state.user);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+      const storedUser = sessionStorage.getItem('user');
+      if (storedUser) {
+          dispatch({
+              type: 'SET_USER',
+              payload: JSON.parse(storedUser)
+          });
+      } else {
+          navigate('/signin');
+      }
+  }, [dispatch, navigate]);
+
+  useEffect(() => {
+      userServices.getUser()
+          .then(user => {
+              const userObject = {
+                  name: user.name,
+                  email: user.email,
+              };
+              dispatch({
+                  type: 'SET_USER',
+                  payload: userObject
+              });
+          })
+          .catch(error => {
+              console.log(error);
+          });
+  }, [dispatch]);
   // const [selectedDay, setSelectedDay] = useState('');
   // const [inputDay, setInputDay] = useState('');
   const [activities, setActivities] = useState([]);
-  const user = useSelector(state => state.user);
+
 
   // const handleDayClick = () => {
   //   setSelectedDay(`day${inputDay}`);
@@ -32,7 +66,28 @@ function Activity() {
   }, [user]);
 
   return (
-    <div className="activity-container">
+   <div>
+ <div className='nav-bar-dash'>
+    <div>
+        {user.user && (
+            <div>
+                <h3>Hello {user.user.name}</h3>
+               
+            </div>
+        )}
+    </div>
+    <p>Welcome to Diet World</p>
+    <div>
+    <Link to='/'>Home</Link>
+        <Link to="/profile" >Profile</Link>
+        <Link to="/activity" >Activity</Link>
+        <Link to="/mealplanner" >Meal-Planner</Link>
+        <Link to="/diet-planner" >Diet-Planner</Link>
+    </div>
+
+
+</div>
+<div className="activity-container">
       <h3>Your Activities</h3>
       {activities.length === 0 ? (
         <p>No activities logged yet.</p>
@@ -68,6 +123,8 @@ function Activity() {
           <BmiCalculator />
         {/* </div> */}
       </div>
+    </div>
+   
     // </div>
   );
 }

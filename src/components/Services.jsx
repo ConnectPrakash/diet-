@@ -3,6 +3,9 @@ import './Services.css'
 function Services() {
   return (
     <div>
+       <header className="header">
+ <a href="/" className="logo">diet</a>
+ </header>
         <section className='services' id='services'>
 
 <h1 className='heading'> Our servicess</h1>

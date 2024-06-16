@@ -19,7 +19,12 @@ function App() {
   };
 
   return (
+
     <div className='container'>
+       <header className="header">
+ <a href="/" className="logo">diet</a>
+ </header>
+   
       <h2>Login</h2>
       <div>
         <label>Username:</label>

@@ -4,6 +4,9 @@ import './Reviews.css'
 function Reviews() {
   return (
     <div>
+       <header className="header">
+ <a href="/" className="logo">diet</a>
+ </header>
         <section className="reviews" id="reviews">
 
 <h1 className="heading">clients reviews</h1>

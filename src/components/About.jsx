@@ -1,9 +1,18 @@
 import React from 'react'
 import './About.css'
 
+
 function About() {
+ 
   return (
     <>
+   
+ <header className="header">
+ <a href="/" className="logo">diet</a>
+ </header>
+   
+
+    
     <div>
       <section className="about" id="about">
         <h1 className="heading">about us</h1>

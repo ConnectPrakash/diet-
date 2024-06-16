@@ -4,6 +4,9 @@ import Product from './Product'
 function Pricing() {
   return (
     <div>
+       <header className="header">
+ <a href="/" className="logo">diet</a>
+ </header>
    <section className='pricing' id='pricing'>
 
 <h1 className="heading">Pricing Plan</h1>

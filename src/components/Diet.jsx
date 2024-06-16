@@ -2,7 +2,12 @@ import React from 'react'
 import './Diet.css'
 function Diet() {
   return (
+
     <div>
+       <header className="header">
+ <a href="/" className="logo">diet</a>
+ </header>
+   
       <section className='diet' id='diet'>
 
 <h1 className='heading'>diet Plan</h1>

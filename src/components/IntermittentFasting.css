@@ -1,0 +1,50 @@
+/* IntermittentFasting.css */
+
+.intermittent-fasting {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intermittent-fasting h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.intermittent-fasting h3 {
+    color: #555;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.intermittent-fasting p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.intermittent-fasting ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.intermittent-fasting li {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+/* Styling specific list items */
+.intermittent-fasting ul li:first-child {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Optional: Add more specific styles as needed */

@@ -55,7 +55,11 @@ function SignUp() {
     };
 
     return (
-        <div className="sign-up-container">
+        <div>
+             <header className="header">
+ <a href="/" className="logo">diet</a>
+ </header>
+ <div className="sign-up-container">
             <h3>Register</h3>
             <form onSubmit={handleSignUp}>
                 {error && <div className="error-message">{error}</div>}
@@ -90,8 +94,10 @@ function SignUp() {
                     <button type='submit'>Register</button>
                 </div>
             </form>
-            <p>Already Registered? <Link to='/signin'>Sign In</Link></p>
+            <p>Already Registered? <Link to='/signin' style={{color:'blue'}}>Sign In</Link></p>
         </div>
+        </div>
+      
     );
 }
 

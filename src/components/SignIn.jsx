@@ -4,13 +4,13 @@ import authService from '../services/auth';
 import { useDispatch } from 'react-redux';
 import './SignIn.css';
 
-function SignIn() {
+function SignIn(props) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const navigate = useNavigate();
     const dispatch = useDispatch();
-
+const [value,setValue] = useState(props.value);
     const validateEmail = (email) => {
         const re = /\S+@\S+\.\S+/;
         return re.test(email);
@@ -54,13 +54,21 @@ function SignIn() {
 
             // Redirect to dashboard page
             navigate('/dashboard');
+
+            setValue(!value);
         } catch (error) {
             setError('Failed to sign in. Please check your credentials and try again.');
         }
     };
 
     return (
-        <div className="sign-in-container">
+        <div>
+               <header className="header">
+ <a href="/" className="logo">diet</a>
+ </header>
+ <div className="sign-in-container">
+          
+   
             <h3>Login</h3>
             <form onSubmit={handleSignIn}>
                 {error && <div className="error-message">{error}</div>}
@@ -86,8 +94,10 @@ function SignIn() {
                     <button type='submit'>Login</button>
                 </div>
             </form>
-            <p>Don't have an account? <Link to="/signup">Register</Link></p>
+            <p>Don't have an account? <Link to="/signup" style={{color:'blue'}}>Register</Link></p>
         </div>
+        </div>
+       
     );
 }
 

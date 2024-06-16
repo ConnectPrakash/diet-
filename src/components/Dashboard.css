@@ -1,60 +1,94 @@
-/* Dashboard.css */
-
-.dashboard-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    text-align: center;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.dashboard-container h3 {
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-.dashboard-container p {
-    margin-bottom: 20px;
-    font-size: 18px;
-    color: #666;
-}
-
-.dashboard-container a {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 10px 20px;
-    border: 1px solid #007bff;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #007bff;
-    font-size: 16px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.dashboard-container a:hover {
-    background-color: #007bff;
-    color: white;
-}
-
-.notes {
+/* Navbar Styles */
+.nav-bar-dash {
+    background-color: #333;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    padding: 14px 20px;
+    color: white;
 }
 
-.notes p {
-    flex: 1;
-    margin-right: 20px;
-    font-size: 16px;
-    color: #333;
+.nav-bar-dash div {
+    display: flex;
+    align-items: center;
 }
 
-.notes img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+.nav-link {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav-link.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Dashboard Container Styles */
+.dashboard-container {
+  
+    justify-content: center;
+ 
+}
+
+.diet-plans {
+    max-width: 800px;
+    width: 100%;
+}
+
+.diet-plans h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.diet-plans ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.diet-plans li {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.diet-plans li:hover {
+    background-color: #f1f1f1;
+}
+
+.diet-plans h3 {
+    margin-top: 0;
+}
+
+.plan-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.plan-link:hover {
+    background-color: #45a049;
 }

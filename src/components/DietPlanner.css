@@ -1,0 +1,50 @@
+.diet-planner {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.diet-planner h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.diet-planner ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.diet-planner li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.diet-planner li:hover {
+    background-color: #f1f1f1;
+}
+
+.diet-planner a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.diet-planner a:hover {
+    color: #007BFF;
+}
+
+.diet-planner p {
+    margin: 0;
+    color: #666;
+}

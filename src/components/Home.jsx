@@ -7,16 +7,7 @@ import { Link} from 'react-router-dom';
 
 
 function Home() {
-  const [selectedDay, setSelectedDay] = useState('');
-  const [inputDay, setInputDay] = useState('');
-
-  const handleDayClick = () => {
-    setSelectedDay(`day${inputDay}`);
-  };
-
-  const handleInputChange = (event) => {
-    setInputDay(event.target.value);
-  };
+  
   const dietPlan = {
     day1: {
       breakfast: 'Scrambled eggs with spinach and tomatoes',
@@ -95,7 +86,19 @@ function Home() {
   return (
     <>
 
-  
+<header className="header">
+          <a href="/" className="logo">diet</a>
+          <nav className="navbar">
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/diet">Diet</Link>
+            <Link to="/pricing">Pricing</Link>
+            <Link to="/reviews">Reviews</Link>
+            <Link to="/signin">Login</Link>
+          </nav>
+          <div className="fas fa-bars" id="menu"></div>
+        </header>
       <section className="home" id="home">
         <div className="content">
           <h3>Welcome to the place full of healthy food</h3>

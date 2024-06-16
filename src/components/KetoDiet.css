@@ -1,0 +1,46 @@
+/* KetoDiet.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.keto-diet {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.keto-diet h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.keto-diet h3 {
+    margin-top: 20px;
+    color: #555;
+}
+
+.keto-diet p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.keto-diet ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.keto-diet li {
+    margin-bottom: 10px;
+    color: #444;
+}

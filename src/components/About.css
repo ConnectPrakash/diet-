@@ -6,6 +6,24 @@ body {
     color: #333;
     line-height: 1.6;
   }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+   
+  
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    
+  }
+  
+ a:hover {
+    text-decoration: underline;
+  }
+  
   
   a {
     text-decoration: none;

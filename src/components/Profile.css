@@ -1,23 +1,79 @@
-/* Profile.css */
-
 .profile-container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #f9f9f9;
+}
+
+.profile-container h2 {
     text-align: center;
-}
-
-.profile-container img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
     margin-bottom: 20px;
+    color: #333;
 }
 
-.profile-container p {
-    font-size: 18px;
-    margin: 10px 0;
+/* Profile field styles */
+.profile-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-field label {
+    flex: 0 0 100px;
+    font-weight: bold;
+    color: #555;
+}
+
+.profile-field input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profile-field span {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #eee;
+}
+
+/* Profile actions styles */
+.profile-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.profile-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-actions button:hover {
+    background-color: #ccc;
+}
+
+.profile-actions button:first-child {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.profile-actions button:first-child:hover {
+    background-color: #45a049;
+}
+
+.profile-actions button:last-child {
+    background-color: #f44336;
+    color: white;
+}
+
+.profile-actions button:last-child:hover {
+    background-color: #e53935;
 }
